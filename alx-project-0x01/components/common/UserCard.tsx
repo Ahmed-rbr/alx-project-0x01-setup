@@ -9,6 +9,7 @@ export default function UserCard({ user }: UserProps) {
       <p className="text-sm text-gray-700 mt-1">
         📍 {user.address.city}, {user.address.street}, {user.address.suite}
       </p>
+      <UserProps></UserProps>
       <p className="text-sm text-gray-700 mt-1">📞 {user.phone}</p>
       <p className="text-sm text-gray-700 mt-1">🌐 {user.website}</p>
       <div className="mt-3">
