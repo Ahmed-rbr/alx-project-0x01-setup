@@ -17,7 +17,7 @@ export async function getStaticProps() {
   };
 }
 
-const Users: React.FC<UsersPageProps> = ({ users }) => {
+const Users: React.FC<UsersPageProps> = ({ posts }) => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
@@ -26,8 +26,8 @@ const Users: React.FC<UsersPageProps> = ({ users }) => {
           Users List
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {users.map((user) => (
-            <UserCard key={user.id} user={user} />
+          {posts.map((post) => (
+            <UserCard key={post.id} user={user} />
           ))}
         </div>
       </main>

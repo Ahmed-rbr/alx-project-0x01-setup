@@ -1,10 +1,6 @@
 import { UserProps } from "@/interfaces";
 
-type UserCardProps = {
-  user: UserProps;
-};
-
-export default function UserCard({ user }: UserCardProps) {
+export default function UserCard({ user }: UserProps) {
   return (
     <div className="p-4 border rounded shadow hover:shadow-lg transition-all bg-white max-w-md w-full mx-auto mb-6">
       <h2 className="text-xl font-bold text-blue-700">{user.name}</h2>
